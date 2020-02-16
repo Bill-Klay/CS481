@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{hyperref}
 \usepackage{fullpage}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -71,5 +72,32 @@ A copy of the dataset has been provided with this file
 	\item Regarding duplicates, select a column as the identifier and set that column id to arranged by numeric from the smallest. This will give all the similar values at the top and then select \emph{edit cells \textgreater blank down} which leaves the first occurrence of a duplicate and then blanks up all subsequent. After which it is the usual, select \emph{all \textgreater remove duplicates}  
 	\item A name file has been provided with the dataset containing all the features and description. The headers can be easily renamed through this file.
 \end{enumerate}
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{OpenRefine.png}
+  \caption{OpenRefine Automobile dataset}
+  \label{fig:OpenRefine}
+\end{figure}
+
+\subsubsection*{Knime}
+Knime pronounced (ni-em) is graphical based data cleaning tool, somewhat like \emph{rapid miner} also able to implement models such as random forest. Running on Java runtime it works on a nodes based drag and drop structure opposed to the faucet based functionality in OpenRefine. Available through the GNU open source license \emph{Knime} is as easy to use as easily available. For the purpose of simplification and keeping within the specified limit we will applying the same configurations to both the dataset i.e. \textbf{automobile and locally generated dataset}. \\
+
+\underline{Data cleaning in Knime}
+\begin{enumerate}
+	\item To add data to a project, we need to create a workflow first.
+	\item Add a \emph{read csv} node to the workflow. Right click it to display further options out which we will select configure, or just hit shortcut F6.
+	\item In the configure dialogue box direct the node to the data stored in the system, for now we will be working with a csv format, hence select csv file. Click \emph{Apply \textgreater Ok}. Remember to check \textbackslash uncheck row and column header as per the need.
+	\item Right click on the node to display a dialogue box showing execute option and select it (shortcut F7). The node status will turn green and the uploaded data can now be displayed. String values present in a Interger column will automatically be removed and an empty cell be present to modify as per the user need.
+	\item Next, drag in a node for statistics, not for our main purpose, but visualizing data is always preferred. 
+	\item Connect the read csv node to the statistics nodes. Similarly this node can be executed and the table viewed.
+	\item For data processing we will be filling in missing values next. Search for a missing values node and connect to the read csv node. The missing value node has a lot of configurations present for filling in missing values such as fill with mean of the column, previous value, next value or even mean average. You can even select different configuration for every column. Click Apply and then Ok after choosing your preferred settings.
+	\item How about an integer to string conversion node? This node will unify all columns and make our dataset consistent. Simply configure by adding and removing columns to which the operation is to be implemented on and click execute.
+\end{enumerate}
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{Knime.png}
+  \caption{Knime workflow example}
+  \label{fig:Knime Workflow}
+\end{figure}
 
 \end{document}
