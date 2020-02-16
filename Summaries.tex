@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+
+\begin{document}
+
+\begin{flushright}
+	\Huge{\textbf{CS481 Data Science}} \\
+	\Large{Assignment 1} \\
+	\emph{\large{\today}} \\
+	\centering \rule{450pt}{1pt}
+	\begin{table}[h!]
+		\begin{center}
+			\begin{tabular}{lr}
+				\large{\textbf{Bilal Hyder}} & \large{16I0262} \\
+				\large{\textbf{Bilal Khan}} & \large{16K3778}\\
+			\end{tabular}
+		\end{center}
+	\end{table}
+\end{flushright}
+
+\subsection*{Q1 Human Centric Data Cleansing Summary}
+
+The document/research paper discusses about Data Cleansing and Analysis in Data Sciences. It explains how businesses often collect large volumes of data to make key decisions. Having such a priority for a company there is few to no space of making mistakes or bad decisions. An opposing force regarding this scenario are incorrect or invalid values filled in data cells. The authors describe many ways these values can be discovered, inspected and changed with validation. These may contain a human being on an end or a fully automated system. \\
+\emph{\underline{Invalid values may occur due to reasons such as}} human error, invalid editing without validation, missing or extra values within the collection and wrong automated collection such as wrong SQL data extraction or masking. Looking at existing data cleaning techniques, the authors describe the following observations:
+\begin{itemize}
+	\item Human Involvement
+	\item Using an Automated tool
+	\item Semi Automated approach
+\end{itemize}
+Every method has its own pros and cons. \textbf{Human Involvement} requires data cleansing at the hand of a professional person who understands as much there is about the domain specially the subject at hand. Though budget consuming and requiring the dispensing of man power this process provides slim chances to occur for such a scenario, nonetheless \emph{a human being is a human after all} and can makes mistakes. \textbf{Automated tools} removes the need for human interaction completely and shows promising results, but presents a serious hold up in case of a deadlock such as in a SQL database with columns dispensing on each other for changes, in this it will requires a human presence, this is where \textbf{Semi Automated approach} comes in providing an assist by human with most of the progress being handled by a tool such as the data cleansing system \emph{NADEEF and KATARA} as directed by another author cited in the paper. \\
+
+\newpage
+
+The paper emphasizes on an architecture for data cleansing with data user presenting error to the analyst which is then repaired and validated by an expert user, while character human expertise as:
+\begin{enumerate}
+	\item Detection - The detection of invalid cells
+	\item Repairing - Reported errors should be fixable by humans
+	\item Validation - Expert human analysis for validation on reparing
+	\item Specification - Humans are enabled to write specifications or a set of rules for detecting and repairing data errors
+	\begin{equation} Expertise = \frac{correct}{validated} \end{equation}
+\end{enumerate}
+\textbf{Task Allocation} is an important part of data cleansing where an automated tool assigns human experts with related tasks out of the machines domain or an available team of human experts do so among themselves, which then again presents a case of limited budget. \textbf{Identification of bottlenecks} represents specifying invalid values correctly with marking a score on each valid repair.
+\begin{equation} Quality = \frac{correct}{validated} \end{equation}
+
+\end{document}
