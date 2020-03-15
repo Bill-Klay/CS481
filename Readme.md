@@ -12,4 +12,8 @@ A LaTeX file for summaries on the research papers described in the assignment. R
 
 #### 3. Lab 5 Folder
 Decisions Tree lab containing comparision between Cross Validation and Hold Out approach based on 5 datasets obtained from UCI Machine Learning Dataset Database. 
+
+### 4. Lab 6 Folder
+Naive Bayes implementation in Python
+
 ... more on way...
