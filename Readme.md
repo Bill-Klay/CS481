@@ -14,6 +14,12 @@ A LaTeX file for summaries on the research papers described in the assignment. R
 Decisions Tree lab containing comparision between Cross Validation and Hold Out approach based on 5 datasets obtained from UCI Machine Learning Dataset Database. 
 
 ### 4. Lab 6 Folder
-Naive Bayes implementation in Python
+Naive Bayes implementation in Python from scratch
+
+### 5. Assignment 2
+Well if you're seeing this *Covod-19* has hit pretty hard here. Work is slow, but making progress nonetheless. Assignment 2 was a written assignment hence pictures for the solutions are [linked](https://drive.google.com/file/d/1YELMxK_9zSbmMw2nxg5Dxf7DoALYuNZ6/view?usp=sharing) to my Google Drive
+
+### 6. Assignment 3
+Implements *KNN, Naive Bayes, Decision Trees and SVM*(Gaussian kernel i.e. rbf and Chi-Squared kernel) classifiers in Python with data obtained from UCI Irvine Machine Learning dataset repository. Examples have been calculated on the Flag and balance scale dataset.
 
 ... more on way...
